@@ -1,0 +1,26 @@
+Dev Log / Goals
+
+####
+## This document will be kept as a changelog and development notes for the project.
+## Every note must be dated unless the date has already been denoted elsewhere in the document.
+####
+
+        Monday Sep. 25th 2023
+----------------------------------------
+    Today is the first day of working on this project seriously. Tonight I want to design a plan, get a basic react project started, and make
+a project scope. This scope will define what will be included in the prototype of this project and a timeline to completion of the prototype.
+
+The basic idea of this application is to create lists for organization of tasks and projects. 
+
+The main focus should be on creating functionality first and cleaning it up later. Styling does not matter unless it affects the functionality
+of the application. Styling can be cleaned up AFTER the function is implemented. 
+
+INITIAL PROTOTYPE SCOPE 
+----------------------------------------
+    - Simple SPA 
+    - Add / Remove Lists
+    - Dropdown to view list items 
+    - Should be able to check off items or the main list itself
+
+PROTOTYPE TIMELINE 
+----------------------------------------

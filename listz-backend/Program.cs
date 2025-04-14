@@ -1,11 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using Listz_Backend.Data;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// Retrieve the connection string from configuration
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+// Register DbContext with MySQL provider
+builder.Services.AddDbContext<ListzContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+// Configure CORS (if needed)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactDev", policy =>
@@ -16,6 +22,7 @@ builder.Services.AddCors(options =>
     });
 });
 
+// Register controllers and Swagger
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -25,10 +32,17 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-app.UseCors("AllowReactDev"); // Enable CORS here
-app.UseSwagger();
-app.UseSwaggerUI();
+// Enable CORS
+app.UseCors("AllowReactDev");
+
+// Setup Swagger in development
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.UseAuthorization();
+
 app.MapControllers();
 app.Run();
-

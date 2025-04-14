@@ -1,0 +1,6 @@
+@listz_backend_HostAddress = http://localhost:5027
+
+GET {{listz_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

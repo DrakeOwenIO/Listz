@@ -34,3 +34,4 @@
 /Users/drakeowen/Documents/Programming/Listz/listz-backend/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/drakeowen/Documents/Programming/Listz/listz-backend/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/drakeowen/Documents/Programming/Listz/listz-backend/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/drakeowen/Documents/Programming/Listz/listz-backend/obj/Debug/net9.0/listz-backend.sourcelink.json

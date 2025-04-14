@@ -1,20 +1,18 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Item } from "../types/types";
 
-interface Item {
-  id: number;
-  name: string;
-  quantity: number;
-}
 
-function App() {
+function ItemsList() {
   const [items, setItems] = useState<Item[]>([]);
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
-    axios.get("http://localhost:5027/api/items")
+    axios.get(`${API_URL}/api/items`)
       .then((response) => setItems(response.data))
       .catch((error) => console.error("API error:", error));
-  }, []);
+  }, [API_URL]);
 
   return (
     <div>
@@ -28,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default ItemsList;

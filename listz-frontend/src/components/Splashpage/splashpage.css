@@ -1,0 +1,145 @@
+.copyright h5{
+    margin: 0;
+    padding: 0;
+    color: lightgray;
+    opacity: 75%;
+}
+
+.page-container {
+    padding: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.marketing-container {
+    width: 50%;
+}
+
+.body-container {
+    margin: 5rem 2rem 5rem 2rem;
+}
+
+.description-text {
+    line-height: 1.5;
+}
+
+.tagline {
+    height: fit-content;
+    font-weight: bold;
+    line-height: 1;
+    
+}
+
+.tagline h1 {
+    font-size: 50px;
+    margin-bottom:2rem ;
+}
+
+.purple {
+    color: #7e3ff2;
+}
+
+.body-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* Ensures both sides stretch to the same height */
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  
+  .animation-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: #fdfcfe; /* Optional: soft background */
+  }
+
+  .cta-button-container {
+    margin-top: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #7e3ff2;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #5f29c7;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    .body-flex-row {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+  
+    .marketing-container,
+    .animation-container {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .tagline h1 {
+      font-size: 36px;
+    }
+  
+    .subheading {
+      font-size: 1rem;
+    }
+  
+    .description-text {
+      font-size: 0.95rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 0.6rem 1.5rem;
+    }
+  
+    .animated-list-wrapper {
+      max-width: 100%;
+      width: 90%;
+    }
+  }
+
+  /* Mobile-only footer placement */
+@media (max-width: 768px) {
+    .mobile-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffffcc; /* translucent white bg */
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+  
+    .mobile-cta .cta-button {
+      width: 90%;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+      font-size: 1rem;
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .page-container {
+      padding-bottom: 5rem; /* creates space below content */
+    }
+  }

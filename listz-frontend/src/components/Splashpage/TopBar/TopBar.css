@@ -1,0 +1,96 @@
+.TopBarContainer {
+  display: flex;
+  align-items: center;       
+  justify-content: space-between; 
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo h1 {
+  margin: 0; 
+  font-size: 1.5rem;
+}
+
+.TopLinksContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.TopLink:hover {
+  color: #7e3ff2; 
+  transition: background-color 0.2s ease;
+}
+
+.TopLink {
+  padding: 0.5rem 1rem;
+  color: #333;
+}
+
+.TopLinksContainer a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.SignUpButton {
+  background-color: #7e3ff2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.SignUpButton:hover {
+  background-color: #5f29c7;
+}
+
+/* Hamburger styles */
+.Hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Hamburger {
+    display: flex;
+  }
+
+  .TopLinksContainer {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: none;
+    border-top: 1px solid #eee;
+  }
+
+  .TopLinksContainer.open {
+    display: flex;
+  }
+
+  .TopLinksContainer a {
+    width: 100%;
+    padding: 0.75rem 0;
+  }
+
+  .SignUpButton {
+    width: 100%;
+    text-align: center;
+  }
+}

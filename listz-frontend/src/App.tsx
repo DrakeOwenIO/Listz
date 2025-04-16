@@ -1,10 +1,13 @@
-import ItemList from './components/ItemList';
-
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Splashpage from "./components/Splashpage/Splashpage";
 function App() {
   return (
     <div style={{ padding: '2rem' }}>
-      <h1>Welcome to Listz 📝</h1>
-      <ItemList />
+      <Router>
+        <Routes>
+          <Route path='/' element={<Splashpage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

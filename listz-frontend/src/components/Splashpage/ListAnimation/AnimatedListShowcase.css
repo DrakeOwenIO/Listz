@@ -1,0 +1,63 @@
+.animated-list-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1rem;
+    border: 2px solid #7e3ff2;
+    border-radius: 12px;
+    background-color: #fdfcfe;
+    box-shadow: 0 8px 24px rgba(126, 63, 242, 0.12);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .animated-list-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .list-row {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+  }
+  
+  .list-header {
+    background-color: #f0eaff;
+    font-weight: bold;
+    border-bottom: 2px solid #7e3ff2;
+  }
+  
+  .list-cell {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .list-row:nth-child(even):not(.list-header) {
+    background-color: #faf7ff;
+  }
+  
+  .list-row:hover:not(.list-header) {
+    background-color: #f2ecff;
+  }
+
+  /* Animation container */
+.animated-list-table {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  /* Slide in from right */
+  .slide-in {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  /* Slide out to left */
+  .slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  

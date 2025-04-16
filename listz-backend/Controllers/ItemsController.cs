@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Listz_Backend.Models;  // Add this for your model later
+using Listz_Backend.Models; 
 
 namespace Listz_Backend.Controllers
 {

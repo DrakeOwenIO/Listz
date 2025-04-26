@@ -1,3 +1,5 @@
+
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./splashpage.css";
 import TopBar from "./TopBar/TopBar";
 import AnimatedListShowcase from "./ListAnimation/AnimatedListShowcase";

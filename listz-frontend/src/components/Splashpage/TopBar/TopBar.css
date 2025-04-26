@@ -1,3 +1,7 @@
+link {
+  text-decoration: none;
+}
+
 .TopBarContainer {
   display: flex;
   align-items: center;       

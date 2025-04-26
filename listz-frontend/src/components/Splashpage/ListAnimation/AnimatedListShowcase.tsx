@@ -15,16 +15,16 @@ const groceryList = [
 ];
 
 const inventoryList = [
-  { name: "Steel Beam", quantity: "20" },
+  { name: "Steel Beam", quantity: "150" },
   { name: "Welding Rods", quantity: "100" },
-  { name: "Bolts", quantity: "500" },
-  { name: "Screws", quantity: "500" },
-  { name: "Screws", quantity: "500" },
-  { name: "Screws", quantity: "500" },
-  { name: "Screws", quantity: "500" },
-  { name: "Screws", quantity: "500" },
-  { name: "Screws", quantity: "500" },
-  { name: "Screws", quantity: "500" },
+  { name: "Bolts", quantity: "260" },
+  { name: "Screws", quantity: "260" },
+  { name: "Nails", quantity: "576" },
+  { name: "Washers", quantity: "230" },
+  { name: "PVC Couplers", quantity: "158" },
+  { name: '1" PVC Pipe', quantity: "60" },
+  { name: "Concrete Bags", quantity: "87" },
+  { name: "Shingles", quantity: "500" },
 ];
 
 const AnimatedListShowcase = () => {

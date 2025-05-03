@@ -8,7 +8,7 @@ const TopBar = () => {
   return (
     <div className="TopBarContainer">
       <div className="logo">
-       <Link to="/"><h1>LISTZ</h1></Link>
+       <h1>LISTZ</h1>
       </div>
 
       <div className={`TopLinksContainer ${menuOpen ? "open" : ""}`}>

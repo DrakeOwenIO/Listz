@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("listz-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e0a3e7e95bffa96967ea08926f4e9d61ac3cb22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33ed7dc6b6ebe633e5c3e60284949c521054ad1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("listz-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("listz-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

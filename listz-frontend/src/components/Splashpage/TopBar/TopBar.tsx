@@ -19,7 +19,10 @@ const TopBar = () => {
           About Us
         </Link>
         <Link to="/" className="SignUpButton" onClick={() => setMenuOpen(false)}>
-          Sign Up
+          Login
+        </Link>
+        <Link to="/Signup" className="SignUpButton" onClick={() => setMenuOpen(false)}>
+          Signup
         </Link>
       </div>
 

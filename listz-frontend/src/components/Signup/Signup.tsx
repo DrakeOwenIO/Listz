@@ -1,7 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
 import "./Signup.css";
-import TopBar from "../Splashpage/TopBar/TopBar";
 
 const Signup = () => {
     const [email, setEmail] = useState("");

@@ -5,12 +5,16 @@ namespace Listz_Backend.Data
 {
     public class ListzContext : DbContext
     {
+        public DbSet<List> Lists { get; set; }
+        public DbSet<ListColumn> ListColumns { get; set; }
+        public DbSet<ListItem> ListItems { get; set; }
+        public DbSet<ListItemValue> ListItemValues { get; set; }
+
         public ListzContext(DbContextOptions<ListzContext> options)
             : base(options)
         {
         }
         
-        public DbSet<Item> Items { get; set; }
         public DbSet<User> Users { get; set; }
     }
 }
